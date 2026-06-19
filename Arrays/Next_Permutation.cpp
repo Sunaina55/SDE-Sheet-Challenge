@@ -1,8 +1,16 @@
+/*
+in three steps - 
+1) pichhe se loop lga ke pehle aisa index find kiya jaha pe nums[i] < nums[i+1] ho
+2) agar aisa index nahi mila to array ko reverse kar do
+3) agar aisa index mila to uske baad se loop lga ke pehle aisa index find kiya jaha pe nums[i] > nums[index] ho, usko swap kar do
+4) uske baad index+1 se end tak array ko reverse kar do
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    vector<int> nums = {1, 2, 3};
+    vector<int> nums = {2,1,5,4,3,0,0};
 
     int n = nums.size();
     int index = -1;
